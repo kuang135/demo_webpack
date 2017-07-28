@@ -37,6 +37,18 @@ html {
     firefox web默认 font-size: 16px; line-height: 19px;
     margin: 8px;
 */
+$colorDark: #333; /*字体*/
+$colorDeep: #555; /*按钮字体*/
+$colorMiddle: #777; /*a:hover字体*/
+$colorLight: #c9c9c9; /*失效按钮字体*/
+$borderColorDark: #d2d2d2; /*下拉框*/
+$borderColorDeep: #c9c9c9; /*按钮的边框*/
+$borderColorMiddle: #e2e2e2; /*表格的边框, tab边框*/
+$borderColorLight: #e6e6e6; /*form的边框，失效按钮的边框*/
+$backgroundColorDark: #d2d2d2; /**/
+$backgroundColorDeep: #e2e2e2; /**/
+$backgroundColorMiddle: #e6e6e6; /*按钮hover的背景色*/
+$backgroundColorLight: #fbfbfb; /*失效按钮的背景色*/
 body {
     height: 100%;
     font-size: 14px;
