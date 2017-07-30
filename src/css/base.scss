@@ -17,6 +17,7 @@
     line-height: 1.5;
     color: #333;
     text-align: center;
+    vertical-align: middle;
   Visual
     background-color: #f5f5f5;
     border: 1px solid #e5e5e5;
@@ -24,14 +25,6 @@
   Misc
     opacity: 1;
 */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-html {
-    height: 100%;
-}
 /*
     chrome web默认 font-size: 16px; line-height: 21px;
     firefox web默认 font-size: 16px; line-height: 19px;
@@ -49,11 +42,23 @@ $backgroundColorDark: #d2d2d2; /**/
 $backgroundColorDeep: #e2e2e2; /**/
 $backgroundColorMiddle: #e6e6e6; /*按钮hover的背景色*/
 $backgroundColorLight: #fbfbfb; /*失效按钮的背景色*/
+$lineHeightBody: 24px;
+$heightInput: 30px;
+$heightButton: 30px;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+}
 body {
     height: 100%;
     font-size: 14px;
     line-height: 24px;
-    color: #333;
+    color: $colorDark;
     background-color: #fff;
 }
 table {
@@ -64,11 +69,12 @@ ul,li {
     list-style: none;
 }
 a {
+    color: $colorDark;
     text-decoration: none;
     cursor: pointer;
 }
 a:hover {
-    color: #777;
+    color: $colorMiddle;
     outline: 0;
 }
 a:active {
@@ -82,8 +88,8 @@ img {
 /* hr 默认border为1 */
 hr {
     height: 1px;
-    margin: 10px 0;
-    background-color: #e6e6e6;
+    margin: 4px 0;
+    background-color: $borderColorLight;
     border: 0;
     clear: both;
 }
@@ -92,49 +98,66 @@ hr {
     firefox width: 143px; height: 16px; border: 1px; padding: 2px;
 */
 input[type="text"] {
-    height: 30px;
     padding: 0 4px;
-    line-height: 30px;
+    height:30px;
+    font-size: 14px;
+    line-height: 28px;
+    vertical-align: middle;
     background-color: #fff;
-    border: 1px solid #e6e6e6;
+    border: 1px solid $borderColorLight;
+    border-radius: 2px;
+    outline: 0;
+}
+textarea {
+    padding: 0 4px;
+    font-family: inherit; /*textarea有自己的字体*/
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid $borderColorLight;
+    border-radius: 2px;
+    outline: 0;
+    resize: vertical;
+}
+select {
+    padding: 0 4px;
+    height:30px;
+    font-size: 14px;
+    line-height: 28px;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid $borderColorLight;
     border-radius: 2px;
     outline: 0;
 }
 
 
-
 /*------------------------*/
-/*
-  #333 -- 默认字体
-  #777 -- a:hover的字体
-  #e6e6e6 -- form的边框,失效按钮的边框, hr的背景色
-  #ccc -- 默认按钮的边框
-  #555 -- 默认按钮的字体
-  #fbfbfb -- 失效按钮的背景色
-  #c9c9c9 -- 失效按钮的字体
-*/
-/*按钮*/
+button {
+    outline: 0;
+}
 .k-btn {
     display: inline-block;
     height: 30px;
     padding: 0 10px;
-    vertical-align: middle;
     font-size: 14px;
-    line-height: 30px;
-    color: #555;
+    line-height: 28px;
+    vertical-align: middle;
+    color: $colorDeep;
     text-align: center;
     white-space: nowrap;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid $borderColorDeep;
     border-radius: 2px;
     cursor: pointer;
 }
 .k-btn:hover {
-    background-color: #e6e6e6;
+    background-color: $backgroundColorMiddle;
 }
 .k-btn-disabled,.k-btn-disabled:hover,.k-btn-disabled:active {
-    border: 1px solid #e6e6e6;
-    background-color: #fbfbfb;
-    color: #c9c9c9;
+    border: 1px solid $borderColorLight;
+    background-color: $backgroundColorLight;
+    color: $colorLight;
     cursor: not-allowed;
 }

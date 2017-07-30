@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+            /*margin: 0;*/
+            /*padding: 0;*/
+        }
+        hr {
+            height: 1px;
+            margin: 4px 0;
+            background-color: #e6e6e6;
+            border: 0;
+            clear: both;
+        }
+        .ul,.li {
+            list-style: none;
+        }
+        .a {
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .a:hover {
+            color: #777;
+            outline: 0;
+        }
+        .input {
+            padding: 0 4px;
+            height:30px;
+            font-size: 14px;
+            line-height: 28px;
+            vertical-align: middle;
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 2px;
+            outline: 0;
+        }
+
+        .textarea {
+            padding: 0 4px;
+            font-family: inherit; /*textarea有自己的字体*/
+            font-size: 14px;
+            line-height: 20px;
+            vertical-align: middle;
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 2px;
+            outline: 0;
+            resize: vertical;
+        }
+        .select {
+            padding: 0 4px;
+            height:30px;
+            font-size: 14px;
+            line-height: 28px;
+            vertical-align: middle;
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 2px;
+            outline: 0;
+        }
+        button {outline: 0;}
+        .k-btn {
+            display: inline-block;
+            height: 30px;
+            padding: 0 10px;
+            font-size: 14px;
+            line-height: 28px;
+            vertical-align: middle;
+            color: #555;
+            text-align: center;
+            white-space: nowrap;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .k-btn:hover {
+            background-color: #e6e6e6;
+        }
+
+    </style>
+</head>
+<body>
+ <hr>
+ <div>
+     <ul>
+         <li>元素1</li>
+         <li>元素2</li>
+         <li>元素3</li>
+     </ul>
+     <ul class="ul">
+         <li class="li">元素1</li>
+         <li class="li">元素2</li>
+         <li class="li">元素3</li>
+     </ul>
+ </div>
+<hr>
+<div>
+    <a href="www.baidu.com">链接</a>
+    <br>
+    <a class="a" href="www.baidu.com">链接</a>
+</div>
+ <hr>
+<div>
+    <input type="text">
+    <button style="display: inline-block;">按钮</button>
+</div>
+ <div>
+    名字<input type="text" class="input"><div class="k-btn">按钮</div>
+ </div>
+<hr>
+<div>
+    <textarea>文本域</textarea>
+    <br>
+    <textarea class="textarea">文本域</textarea><div class="k-btn">按钮</div>
+</div>
+ <hr>
+<div>
+    <select>
+        <option>选项一</option>
+        <option>选项二</option>
+        <option>选项仨</option>
+    </select>
+    <br>
+    <select class="select">
+        <option>选项一</option>
+        <option>选项二</option>
+        <option>选项仨</option>
+    </select><div class="k-btn">按钮</div>
+</div><hr>
+<div>
+    <button>按钮</button>
+    <br>
+    <button class="k-btn">按钮</button>
+</div>
+</body>
+</html>

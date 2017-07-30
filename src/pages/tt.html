@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多行文本垂直居中</title>
+    <style>
+        hr {
+            height: 1px;
+            margin: 4px 0;
+            background-color: #ccc;
+            border: 0;
+            clear: both;
+        }
+        .div1 {
+            line-height: 50px;
+            border: 1px solid #333;
+        }
+        .div2 {
+            width: 200px;
+            line-height: 140px;
+            text-align: center;
+            background-color: pink;
+        }
+        .div2 img {
+            vertical-align: middle;
+        }
+        .div3 {
+            width: 200px;
+            font-size: 0;
+            line-height: 140px;
+            text-align: center;
+            background-color: pink;
+        }
+        .div3 img {
+            vertical-align: middle;
+        }
+
+        .div4{
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            background-color: pink;
+        }
+        .div4 i {
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .div4 span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .div5 {
+            height: 100px;
+            font-size: 0; /*去掉缝隙*/
+            line-height: 100px;
+            text-align: center;
+            background-color: #ccc;
+        }
+        .div5 img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        .div5 span {
+            font-size: 14px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">单行文本垂直居中, height和line-height一样, 或仅设置line-height</div>
+<hr>
+<!--图片近视垂直居中-->
+<div class="div2">
+    <img src="../img/img_big.jpg">
+</div>
+<hr>
+<!--图片完全垂直居中-->
+<div class="div3">
+    <img src="../img/img_big.jpg">
+</div>
+<hr>
+<div class="div4">
+    <i></i><span>多行文本垂直居中, 前面加了一个行内块i, 高度100%, vertical-align为middle</span>
+</div>
+<hr>
+<!--图片和文本对齐-->
+<div class="div5">
+    <img src="../img/m.jpg">
+    <span>图片文字对齐，图片和文字的vertical-align都设置为middle；父元素的font-size为0，去掉图片文字之间的缝隙</span>
+</div>
+</body>
+</html>

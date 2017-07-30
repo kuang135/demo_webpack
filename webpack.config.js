@@ -9,6 +9,10 @@ var cssLoader = extractCSS.extract(['css-loader', 'postcss-loader']);
 var sassLoader = extractCSS.extract(['css-loader', 'postcss-loader', 'sass-loader']);
 var lessLoader = extractCSS.extract(['css-loader','postcss-loader', 'less-loader']);
 
+var pageArr = [
+	''
+];
+
 module.exports = {
 	//入口文件
 	entry: {
@@ -59,8 +63,8 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			filename: 'pages/test.html',
-			template: './src/pages/test.html',
+			filename: 'pages/test_all.html',
+			template: './src/pages/test_all.html',
 			inject: 'body',
 			chunks: ['base']
 		}),
